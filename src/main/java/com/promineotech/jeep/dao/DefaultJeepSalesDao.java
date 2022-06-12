@@ -23,7 +23,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class DefaultJeepSalesDao implements JeepSalesDao {
 
-	@Autowired
+	@Autowired 
 	private NamedParameterJdbcTemplate jdbcTemplate;
 	
 	@Override

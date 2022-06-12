@@ -1,5 +1,6 @@
 package com.promineotech.jeep.service;
 
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,9 @@ public class DefualtJeepSalesService implements JeepSalesService {
 	public List<Jeep> fetchJeeps(JeepModel model, String trim) {
 		log.info("The fetchJeeps method was called with model={} and trim={}", 
 				model, trim);
-		
 		return jeepSalesDao.fetchJeeps(model, trim);
+		
+		
 	}
 
 }

@@ -2,6 +2,7 @@ package com.promineotech.jeep.entity;
 
 import java.math.BigDecimal;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
@@ -26,5 +27,8 @@ public class Jeep {
 	public Long getModelPK() {
 		return modelPK;
 	}
+
+	
+	
 	
 }

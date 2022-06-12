@@ -9,17 +9,17 @@ import lombok.Data;
 @Data
 @Builder
 public class Order {
-  private Long orderPK;
-  private Customer customer;
-  private Jeep model;
-  private Color color;
-  private Engine engine;
-  private Tire tire;
-  private List<Option> options;
-  private BigDecimal price;
+	private Long orderPK;
+	private Customer customer;
+	private Jeep model;
+	private Color color;
+	private Engine engine;
+	private Tire tire;
+	private List<Option> options;
+	private BigDecimal price;
   
-  @JsonIgnore
-  public Long getOrderPK() {
-    return orderPK;
+	@JsonIgnore
+	public Long getOrderPK() {
+		return orderPK;
   }
 }
